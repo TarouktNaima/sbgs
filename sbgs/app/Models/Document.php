@@ -16,6 +16,6 @@ class Document extends Model
 
     public function stagiaire()
     {
-        return $this->belongsTo(Stagiaire::class, 'stagiaire_id');
+        return $this->belongsTo(Stagiaire::class, 'stagiaire_id', 'id_stagiaire'); // ✅ زيدنا id_stagiaire
     }
 }
