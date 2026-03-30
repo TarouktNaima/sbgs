@@ -23,3 +23,6 @@ Route::get('/documents', [DocumentController::class, 'index']);
 
 
 Route::post('/stagiaires', [StagiaireController::class, 'store']);
+Route::post('/forgot-password', [AuthController::class, 'forgotPassword']);
+Route::post('/check-email', [AuthController::class, 'checkEmail']);
+Route::post('/reset-password/{id}', [AuthController::class, 'resetPassword']);
